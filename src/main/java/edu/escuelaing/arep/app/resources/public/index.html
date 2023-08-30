@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=\"UTF-8\">
+    <title>Ejemplo de HTML y JavaScript</title>
+    <link rel="stylesheet" src="style.css">
+    <script>
+        function sumar() {
+            var numero1 = parseInt(document.getElementById("numero1").value);
+            var numero2 = parseInt(document.getElementById("numero2").value);
+            var suma = numero1 + numero2;
+            var mensaje = "la suma es: " + suma;
+            document.getElementById("resultado").textContent = mensaje;
+        }
+    </script>
+</head>
+<body>
+    <h1>Saludo</h1>
+    <label for="numero1">Ingresa numero1:</label>
+    <input type="text" id="numero1">
+    <br>
+    <label for="numero2">Ingresa numero2:</label>
+    <input type="text" id="numero2">
+    <br>
+    <button class=""onclick="sumar()">sumar</button>
+    <p id="resultado"></p>
+</body>
+</html>
